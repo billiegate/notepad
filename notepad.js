@@ -106,11 +106,10 @@ const initEdit = (node) => {
 const initDelete = (node) => {
     // init click event of the node passed
     node.onclick = (e) => { 
-        let notes = document.getElementsByClassName('notes');
-        let index = [...notes].indexOf(e.srcElement.parentElement.parentElement);
-        console.log(index);
-        console.log(delete notes[index]);
-        console.log(notes);
+        let _notes = document.getElementsByClassName('notes');
+        let index = [..._notes].indexOf(e.srcElement.parentElement.parentElement);
+        notes.splice(index, 1);
         updateFolder();
     };
 }
+

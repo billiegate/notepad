@@ -7,7 +7,7 @@
     <body>
         <div class="container">
             <div id="folder">
-                <!-- Every new note looks like this-->
+                <!-- sample of how a note node looks like -->
                 <!--<div class="notes">
                     <p class="text">
                         this is a text
@@ -17,18 +17,18 @@
                         <button class="delete">delete</button>
                     </div>
                 </div>-->
-                
+                <!-- text area for writing new note -->
                 <div id="note">
                     <textarea id="text" placeholder="type something here..." focus="focus"></textarea>
                     <button class="done" onclick='addNote()'>save</button>
                 </div>
-                
-                
+                <!-- button to start a new note --> 
                 <div id="create">
                     <button onclick='showEdit()'>+</button>
                 </div>
             </div>
-        </div> 
+            
+        </div>
         <script src="notepad.js"></script>       
     </body>
 </html>

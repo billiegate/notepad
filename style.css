@@ -5,15 +5,15 @@ html, body {
 }
 .container{
     margin: 0 10%;
+    background: #c0c0c0;
+    min-height: 100vh;
 }
 
 #folder{
-    background: #c0c0c0;
     display: flex;
     display: relative;
-    min-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 }
 
 .notes{
@@ -24,6 +24,29 @@ html, body {
     background: #404040;
     position: relative;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+    .notes{
+        padding: 7px;
+        margin: 1%;
+        width: 98%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+    .notes{
+        margin: 1%;
+        width: 46%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){ 
+    .notes{
+        margin: 0.80%;
+        width: 30%;
+    }
+}
+
 
 #note{
     width:100%;
@@ -52,11 +75,11 @@ html, body {
 .text{
     margin-top: 0px;
     color: #ccc;
+    overflow: hidden;
     text-overflow: ellipsis;
     font-size: 10px;
     display: block;
-    height: 80%;
-    background:red;
+    height: 76%;
 }
 
 .options{
