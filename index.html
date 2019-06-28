@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Note Pad | using pure js</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="folder">
+                <!-- Every new note looks like this-->
+                <!--<div class="notes">
+                    <p class="text">
+                        this is a text
+                    </p>
+                    <div class="options">
+                        <button class="edit">edit</button>
+                        <button class="delete">delete</button>
+                    </div>
+                </div>-->
+                
+                <div id="note">
+                    <textarea id="text" placeholder="type something here..." focus="focus"></textarea>
+                    <button class="done" onclick='addNote()'>save</button>
+                </div>
+                
+                
+                <div id="create">
+                    <button onclick='showEdit()'>+</button>
+                </div>
+            </div>
+        </div> 
+        <script src="notepad.js"></script>       
+    </body>
+</html>
